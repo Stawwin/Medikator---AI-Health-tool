@@ -1,0 +1,7 @@
+<!-- input_form_template.html -->
+<form method="post" action="{% url 'process_user_input' %}">
+    {% csrf_token %}
+    <label for="input_data">Input your name:</label>
+    <input type="text" id="input_data" name="input_data" required>
+    <button type="submit">Submit</button>
+</form>
